@@ -1,16 +1,16 @@
 # Filter 'All' Activities Dynamics 365
 
 ```javascript
-FormHelper.FilterAllActivities = function () {
+function filterAllActivities() {
     $("#navActivities").click(function () {
-        FormHelper._filterAllActivitiesBase();
+        _filterAllActivitiesBase();
     });
 }
 
-FormHelper._filterAllActivitiesBase = function () {
+function _filterAllActivitiesBase() {
     var frame = $("#areaActivitiesFrame");
     if (frame == null || frame.length == 0) {
-        setTimeout(FormHelper._filterAllActivitiesBase, 100);
+        setTimeout(_filterAllActivitiesBase, 100);
         return;
     }
 
