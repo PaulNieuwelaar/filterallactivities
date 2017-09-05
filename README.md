@@ -2,7 +2,7 @@
 
 ![](https://user-images.githubusercontent.com/14048382/30040310-a776ba02-9231-11e7-86d9-e6a165d07af1.png)
 
-Call the ```filterAllActivities();``` function from the Account/Contact OnLoad event.
+Call the ```filterAllActivities();``` function from the Account/Contact OnLoad event. This will default the "Filter on" drop down to show "All" activities, rather than last 30 days. Note that the default associated view still only shows "Open" activities, so you may want to customize this view to include "Closed" activities as well.
 
 ```javascript
 function filterAllActivities() {
